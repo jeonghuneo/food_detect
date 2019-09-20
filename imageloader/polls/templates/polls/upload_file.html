@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<head>
+	<meta charset = "UTF-8">
+	<title>재료 분석</title>
+	<style>
+		body{
+			background-image:url("https://cdn.pixabay.com/photo/2017/08/05/12/33/flat-lay-2583213_1280.jpg");
+			background-repeat:no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+		.main{
+
+			font-family:Arial;
+			text-align: center;
+			font-size: 60px;
+			font-weight: bold;
+			margin-block-start: 0.67em;
+			margin-block-end: 0.67em;
+			margin-inline-start: 0px;
+			margin-inline-end: 0px;
+		}
+    	/*.data{
+    	text-align: center;
+		font-size: 40px;
+		font-weight: 300;
+		font-family: inherit;
+		margin-block-start: 0.67em;
+		margin-block-end: 0.67em;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		margin: 0px auto;
+		}*/
+		.button{
+			text-align:center;
+			font-size: 30px;
+		}
+
+	</style>
+</head>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/df_style.css' %}" />
+<body>
+	<div class = "main">
+		YOLO Analysis Result
+	</div>
+	<div class ="image" style="text-align:center;">
+		<img src="{% static 'before.jpg' %}" width="500" height="375" alt="before" / >
+		<img src="{% static 'after.jpg' %}" width="500" height="375" alt="after" / >
+	</div>
+
+	<!-- <div class = "data" >
+		{{ data | safe }}
+	</div> -->
+	</br>
+	<div class = "button">
+		<a href="http://223.195.30.61:8080/polls/recommend/">Food Recommending Algorithm Analysis</a>
+	</div>
+</body>
+</html>
